@@ -13,7 +13,7 @@ export const Empty = ({
             <Image
             alt= "Empty"
             fill
-            src="/solar_pic2.jpg"
+            src="/speech-bubbles-303206.svg"
             />
         </div>
         <p className="text-muted-foreground text-sm text-center">

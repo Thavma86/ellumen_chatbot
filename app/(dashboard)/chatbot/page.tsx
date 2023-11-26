@@ -86,8 +86,8 @@ const ChatbotPage = () => {
   return (
     <div>
         <Heading
-        title='Ellenum® Chatbot'
-        description = 'A demo version of Rasa powered Chatbot'
+        title='ELLENUM® Chatbot'
+        description = 'Making Leading Machine Learning Products'
         icon={MessageSquare}
         iconColor='text-violet-500'
         bgColor='bg-violet-500/10'
@@ -112,14 +112,14 @@ const ChatbotPage = () => {
               focus=visible:ring-transparent
               focus-visible:ring-0'
               disabled={isLoading}
-              placeholder='How can I get a Solar qoute?'
+              placeholder='Hello Bot...'
               {...field}
                />
                </FormControl>
                </FormItem>
                )}
                />
-               <Button className='col-span-12 lg:col-span-2 w-full bg-blue-600' disabled={isLoading}>
+               <Button className='col-span-12 lg:col-span-2 w-full bg-black' disabled={isLoading}>
                 Chat
                </Button>
              </form>

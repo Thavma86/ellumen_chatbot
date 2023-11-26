@@ -18,12 +18,13 @@ export const metadata = {
           
 
           <div>
-          <div className="h-full w-72 fixed">
+          <div className="h-full w-72 md:hidden">
           <DashNavbar />
           </div>
           
           
-        <div className="bg-black w-72 h-full fixed hidden md:flex">
+        <div className="bg-black  w-72 h-full fixed hidden md:flex 
+         items-center">
                 <DashSidebar />
             </div>
             </div>

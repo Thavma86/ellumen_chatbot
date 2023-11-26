@@ -63,13 +63,14 @@ const DashboardPage = ()=>{
         </p>
        </div>
 
-       <div className='px-4 md:px-32 space-y-4'>
+       <div className='px-2 md:px-32 py-4'>
        {
         routes.map((tool, index)=>
           <Card 
           onClick={()=>router.push(tool.href)}
           key={index}
-          className='p-4 border-black/5 flex items-center justify-between hover:shadow-md transition cursor-pointer'
+          className='p-2 border-black/5 flex items-center justify-between hover:shadow-md 
+          transition cursor-pointer'
           >
 
             <div className='flex items-center gap-x-4'>
