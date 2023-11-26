@@ -69,7 +69,8 @@ const DashboardPage = ()=>{
           <Card 
           onClick={()=>router.push(tool.href)}
           key={index}
-          className='p-2 border-black/5 flex items-center justify-between hover:shadow-md 
+          className='p-3 border-black/5 flex items-center justify-between 
+          hover:shadow-md gap-2
           transition cursor-pointer'
           >
 
