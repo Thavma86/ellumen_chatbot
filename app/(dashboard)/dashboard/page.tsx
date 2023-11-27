@@ -1,7 +1,7 @@
 "use client"
 import {useEffect, useState} from 'react'
 import Image from 'next/image'
-import { ArrowRight, Code, CodeIcon, EyeIcon, ImageIcon, LayoutDashboard, MenuIcon, MessageSquare, MusicIcon, Settings, VideoIcon } from 'lucide-react'
+import { ArrowRight, BotIcon, Code, CodeIcon, CpuIcon, EyeIcon, ImageIcon, LayoutDashboard, MenuIcon, MessageSquare, MusicIcon, Settings, VideoIcon, ZapIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import {useRouter} from 'next/navigation'
@@ -14,12 +14,49 @@ const routes = [
 
  
     {
-      label: "Ellumen® Chatbot",
+      label: "Chatbot",
       icon: MessageSquare,
       href: "/chatbot",
       color: "text-blue-b00",
       bgColor: 'text-blue-600'
       },
+
+      {
+        label: "Training",
+        icon: EyeIcon,
+        href: "/dashboard",
+        color: "text-grey-500",
+        bgColor: 'text-blue-600'
+        },
+  
+        {
+          label: "Rules",
+          icon: CpuIcon,
+          href: "/dashboard",
+          color: "text-grey-500",
+          bgColor: 'text-blue-600'
+          },
+          {
+            label: "Response",
+            icon: ZapIcon,
+            href: "/dashboard",
+            color: "text-grey-500",
+            bgColor: 'text-blue-600'
+            },
+            {
+              label: "Intent",
+              icon: BotIcon,
+              href: "/dashboard",
+              color: "text-grey-500",
+              bgColor: 'text-blue-600'
+              },
+              {
+                label: "Story",
+                icon: MessageSquare,
+                href: "/dashboard",
+                color: "text-grey-500",
+                bgColor: 'text-blue-600'
+                },
   
             {
               label: "Settings",
@@ -87,8 +124,14 @@ const DashboardPage = ()=>{
             </div>
             <ArrowRight className='w-5 h-5' />
           </Card>
+
+          
         )
        }
+
+             <div className='relative h-32 w-full mt-5'>
+             <Image src='/speech-bubbles-303206.svg' alt='chat logo' fill />
+            </div>
        </div>
 
     </div>

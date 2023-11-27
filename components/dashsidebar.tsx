@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from 'next/image'
 import { Montserrat} from "next/font/google";
 import { cn } from "@/lib/utils";
-import { Code, CodeIcon, EyeIcon, HomeIcon, ImageIcon, LayoutDashboard, LogOutIcon, MenuIcon, MessageSquare, Music2Icon, Settings, VideoIcon } from "lucide-react";
+import { BotIcon, Code, CodeIcon, CpuIcon, EyeIcon, HomeIcon, ImageIcon, LayoutDashboard, LogOutIcon, MenuIcon, MessageSquare, Music2Icon, Settings, VideoIcon, ZapIcon } from "lucide-react";
 import {usePathname} from 'next/navigation'
 
 
@@ -31,11 +31,43 @@ const routes = [
   color: "text-grey-500"
   },
   {
-    label: "Ellumen® Chatbot",
+    label: "Chatbot",
     icon: MessageSquare,
     href: "/chatbot",
-    color: "text-blue-600"
+    color: "text-grey-500"
     },
+ 
+    {
+      label: "Training",
+      icon: EyeIcon,
+      href: "/dashboard",
+      color: "text-grey-500"
+      },
+
+      {
+        label: "Rules",
+        icon: CpuIcon,
+        href: "/dashboard",
+        color: "text-grey-500"
+        },
+        {
+          label: "Response",
+          icon: ZapIcon,
+          href: "/dashboard",
+          color: "text-grey-500"
+          },
+          {
+            label: "Intent",
+            icon: BotIcon,
+            href: "/dashboard",
+            color: "text-grey-500"
+            },
+            {
+              label: "Story",
+              icon: MessageSquare,
+              href: "/dashboard",
+              color: "text-grey-500"
+              },
 
           {
             label: "Settings",

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +17,12 @@ const Home = ()=> {
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="/"
+            className=" flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="/dashboard"
           >
-            By{' '}
-            <p className='text-lg font-extrabold'>Zeitios</p>
+            
+            <Button>Get Started</Button>
+            
             {/* <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -45,7 +48,7 @@ const Home = ()=> {
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
-          href="/"
+          href="/dashboard"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -60,7 +63,7 @@ const Home = ()=> {
         </a>
 
         <a
-          href="/"
+          href="/dashboard"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -78,7 +81,7 @@ const Home = ()=> {
         </a>
 
         <a
-          href="/"
+          href="/dashboard"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
