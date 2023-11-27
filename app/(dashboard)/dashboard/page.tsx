@@ -95,12 +95,12 @@ const DashboardPage = ()=>{
         Ellumen® Dashboard
         </h2>
 
-        <p className='text-muted-foreground font-light text-sm md:text-lg text-center'>
+        {/* <p className='text-muted-foreground font-light text-sm md:text-lg text-center'>
         ZEITIOS® - Leading Machine Learning Products
-        </p>
+        </p> */}
        </div>
 
-       <div className='px-2 md:px-32 py-4'>
+       <div className='px-2  py-4'>
        {
         routes.map((tool, index)=>
           <Card 
