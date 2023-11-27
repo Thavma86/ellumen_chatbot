@@ -27,7 +27,7 @@ const ChatbotPage = () => {
     const form = useForm <z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            text: ""
+            payload: ""
         }
     })
 
@@ -39,7 +39,7 @@ const ChatbotPage = () => {
          
          const userMessage = {
             role: "user",
-            content: values.text
+            content: values.payload
          }
 
         
@@ -51,7 +51,7 @@ const ChatbotPage = () => {
             mode: 'cors',
             method: 'POST',
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({payload: values.text})
+            body: JSON.stringify({payload: values.payload})
             
          })
          .then((res)=>{
