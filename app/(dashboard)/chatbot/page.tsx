@@ -86,7 +86,7 @@ const ChatbotPage = () => {
   return (
     <div>
         <Heading
-        title='ELLENUM® Chatbot'
+        title='Ellumen® Chatbot'
         description = 'Making Leading Machine Learning Products'
         icon={MessageSquare}
         iconColor='text-violet-500'
